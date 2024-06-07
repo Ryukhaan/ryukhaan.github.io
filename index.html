@@ -1,8 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Personnelle</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #DDD;
+            width: 80%;
+            background-color: #FFF;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        .social-links {
+            margin: 10px 0;
+        }
+        .social-links a {
+            color: #666;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .social-links a:hover {
+            color: #333;
+        }
+        .articles {
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .article {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+            text-align: left;
+        }
+        .article:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .article h2 {
+            margin-top: 0;
+        }
+        .article p {
+            margin: 10px 0;
+        }
+        .article .meta {
+            font-size: 0.9em;
+            color: #999;
+        }
+        footer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #FFF;
+            border: 1px solid #DDD;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        footer a {
+            display: block;
+            color: #666;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<button><a href="./projects/text-to-speech-mpp/index.html">Go to projects</a></button>
+    <header>
+        <h1>👋 Welcome to Ryukhaan's Blog</h1>
+        <p>Welcome to my blog.</p>
+        <div class="social-links">
+            <a href="#">🔗</a>
+            <a href="#">🐱</a>
+            <a href="#">🐦</a>
+        </div>
+    </header>
+    <footer>
+        <a href="#">Posts</a>
+        <a href="#">Archive</a>
+        <a href="#">Search</a>
+        <a href="#">Tags</a>
+        <a href="#">FAQ</a>
+        <a href="#">emojisearch.app</a>
+    </footer>
+    <div class="articles">
+        <a class="article" href="./projects/text-to-speech-mpp/">
+            <h2>Facial Reenactment, Talking Head Videos</h2>
+            <p></p>
+            <p class="meta">Date: June 7, 2024 | Estimated Reading Time: 10 min | Author: Ryukhaan</p>
+        </a>
+        <a class="article" href="https://example.com/thinking-about-high-quality-human-data">
+            <h2>Kolmogorov–Arnold Networks</h2>
+            <p>Alternative to Multi-Layer Perceptrons (MLPs)</p>
+            <p class="meta">Date: June 7, 2024 | Estimated Reading Time: 5 min | Author: Lilian Weng</p>
+        </a>
+        <a class="article" href="https://example.com/adversarial-attacks-on-llms">
+            <h2>Adversarial Attacks on LLMs</h2>
+            <p>The use of large language models in the real world has strongly accelerated by the launch of ChatGPT. We (including my team at OpenAI, shoutout to them) have invested a lot of effort to build default safe...</p>
+            <p class="meta">Date: October 25, 2023 | Estimated Reading Time: 33 min | Author: Lilian Weng</p>
+        </a>
+        <a class="article" href="https://example.com/article-4">
+            <h2>Article 4 Title</h2>
+            <p>Article 4 description...</p>
+            <p class="meta">Date: January 1, 2023 | Estimated Reading Time: 15 min | Author: Author Name</p>
+        </a>
+        <a class="article" href="https://example.com/article-5">
+            <h2>Article 5 Title</h2>
+            <p>Article 5 description...</p>
+            <p class="meta">Date: February 2, 2023 | Estimated Reading Time: 18 min | Author: Author Name</p>
+        </a>
+        <a class="article" href="https://example.com/article-6">
+            <h2>Article 6 Title</h2>
+            <p>Article 6 description...</p>
+            <p class="meta">Date: March 3, 2023 | Estimated Reading Time: 20 min | Author: Author Name</p>
+        </a>
+        <a class="article" href="https://example.com/article-7">
+            <h2>Article 7 Title</h2>
+            <p>Article 7 description...</p>
+            <p class="meta">Date: April 4, 2023 | Estimated Reading Time: 22 min | Author: Author Name</p>
+        </a>
+        <a class="article" href="https://example.com/article-8">
+            <h2>Article 8 Title</h2>
+            <p>Article 8 description...</p>
+            <p class="meta">Date: May 5, 2023 | Estimated Reading Time: 25 min | Author: Author Name</p>
+        </a>
+    </div>
 </body>
 </html>
